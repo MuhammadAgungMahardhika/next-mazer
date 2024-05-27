@@ -207,8 +207,10 @@ class Sidebar {
   }
 
   forceElementVisibility(el) {
-    if (!this.isElementInViewport(el)) {
-      el.scrollIntoView(false)
+    if(el){
+      if (!this.isElementInViewport(el)) {
+        el.scrollIntoView(false)
+      }
     }
   }
 }
